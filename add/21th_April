@@ -1,0 +1,111 @@
+/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/torch/utils/cpp_extension.py:1964: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+[2026-05-05 19:14:50,141][HYDRA] Launching 5 jobs locally
+[2026-05-05 19:14:50,142][HYDRA] 	#0 : +data=data_swp model.masking.a=0.2
+Current working directory: /exp/exp4/acp23xt/DTDM_sgmse/add/Hydra_add/model.masking.a:0.2
+[2026-05-05 19:14:50,222][root][INFO] - Initializing logger...
+[2026-05-05 19:14:50,223][root][INFO] - Initializing data loaders...
+[2026-05-05 19:14:51,201][root][INFO] - Initializing model...
+[2026-05-05 19:14:52,630][root][INFO] - Number of encoder parameters = 7.20m
+[2026-05-05 19:14:52,657][root][INFO] - Number of decoder parameters = 16.44m
+/exp/exp4/acp23xt/DTDM_sgmse/add/train.py:63: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(cfg.training.pre_checkpoint)
+cfg.training.pre_checkpoint is ../../checkpts/grad-tts-new_0.pt
+[2026-05-05 19:14:53,101][root][INFO] - Initializing optimizer...
+[2026-05-05 19:14:54,058][root][INFO] - Start training...
+  0%|          | 0/426 [00:00<?, ?it/s]  0%|          | 0/426 [00:01<?, ?it/s]
+[2026-05-05 19:14:56,024][HYDRA] 	#1 : +data=data_swp model.masking.a=0.4
+Current working directory: /exp/exp4/acp23xt/DTDM_sgmse/add/Hydra_add/model.masking.a:0.4
+[2026-05-05 19:14:56,118][root][INFO] - Initializing logger...
+[2026-05-05 19:14:56,119][root][INFO] - Initializing data loaders...
+[2026-05-05 19:14:57,048][root][INFO] - Initializing model...
+[2026-05-05 19:14:58,189][root][INFO] - Number of encoder parameters = 7.20m
+[2026-05-05 19:14:58,219][root][INFO] - Number of decoder parameters = 16.44m
+/exp/exp4/acp23xt/DTDM_sgmse/add/train.py:63: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(cfg.training.pre_checkpoint)
+cfg.training.pre_checkpoint is ../../checkpts/grad-tts-new_0.pt
+[2026-05-05 19:14:58,641][root][INFO] - Initializing optimizer...
+[2026-05-05 19:14:58,642][root][INFO] - Start training...
+  0%|          | 0/426 [00:00<?, ?it/s]  0%|          | 0/426 [00:01<?, ?it/s]
+[2026-05-05 19:14:59,748][HYDRA] 	#2 : +data=data_swp model.masking.a=0.6
+Current working directory: /exp/exp4/acp23xt/DTDM_sgmse/add/Hydra_add/model.masking.a:0.6
+[2026-05-05 19:14:59,837][root][INFO] - Initializing logger...
+[2026-05-05 19:14:59,838][root][INFO] - Initializing data loaders...
+[2026-05-05 19:15:00,966][root][INFO] - Initializing model...
+[2026-05-05 19:15:02,156][root][INFO] - Number of encoder parameters = 7.20m
+[2026-05-05 19:15:02,183][root][INFO] - Number of decoder parameters = 16.44m
+cfg.training.pre_checkpoint is ../../checkpts/grad-tts-new_0.pt
+[2026-05-05 19:15:02,627][root][INFO] - Initializing optimizer...
+[2026-05-05 19:15:02,629][root][INFO] - Start training...
+  0%|          | 0/426 [00:00<?, ?it/s]  0%|          | 0/426 [00:01<?, ?it/s]
+[2026-05-05 19:15:03,674][HYDRA] 	#3 : +data=data_swp model.masking.a=0.8
+Current working directory: /exp/exp4/acp23xt/DTDM_sgmse/add/Hydra_add/model.masking.a:0.8
+[2026-05-05 19:15:03,772][root][INFO] - Initializing logger...
+[2026-05-05 19:15:03,773][root][INFO] - Initializing data loaders...
+[2026-05-05 19:15:04,819][root][INFO] - Initializing model...
+[2026-05-05 19:15:06,097][root][INFO] - Number of encoder parameters = 7.20m
+[2026-05-05 19:15:06,128][root][INFO] - Number of decoder parameters = 16.44m
+cfg.training.pre_checkpoint is ../../checkpts/grad-tts-new_0.pt
+[2026-05-05 19:15:06,545][root][INFO] - Initializing optimizer...
+[2026-05-05 19:15:06,546][root][INFO] - Start training...
+  0%|          | 0/426 [00:00<?, ?it/s]  0%|          | 0/426 [00:01<?, ?it/s]
+[2026-05-05 19:15:07,587][HYDRA] 	#4 : +data=data_swp model.masking.a=1
+Current working directory: /exp/exp4/acp23xt/DTDM_sgmse/add/Hydra_add/model.masking.a:1
+[2026-05-05 19:15:07,675][root][INFO] - Initializing logger...
+[2026-05-05 19:15:07,677][root][INFO] - Initializing data loaders...
+[2026-05-05 19:15:08,966][root][INFO] - Initializing model...
+[2026-05-05 19:15:10,249][root][INFO] - Number of encoder parameters = 7.20m
+[2026-05-05 19:15:10,279][root][INFO] - Number of decoder parameters = 16.44m
+cfg.training.pre_checkpoint is ../../checkpts/grad-tts-new_0.pt
+[2026-05-05 19:15:11,027][root][INFO] - Initializing optimizer...
+[2026-05-05 19:15:11,029][root][INFO] - Start training...
+  0%|          | 0/426 [00:00<?, ?it/s]  0%|          | 0/426 [00:01<?, ?it/s]
+Error executing job with overrides: ['+data=data_swp', 'model.masking.a=0.2']
+Traceback (most recent call last):
+  File "/exp/exp4/acp23xt/DTDM_sgmse/add/train.py", line 140, in <module>
+    main()
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/_internal/utils.py", line 465, in _run_app
+    run_and_report(
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           ^^^^^^
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/_internal/utils.py", line 466, in <lambda>
+    lambda: hydra.multirun(
+            ^^^^^^^^^^^^^^^
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/_internal/hydra.py", line 162, in multirun
+    ret = sweeper.sweep(arguments=task_overrides)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/_internal/core_plugins/basic_sweeper.py", line 181, in sweep
+    _ = r.return_value
+        ^^^^^^^^^^^^^^
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/exp/exp4/acp23xt/DTDM_sgmse/add/train.py", line 99, in main
+    dur_loss, prior_loss, diff_loss = model.compute_loss(x, x_lengths,
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/exp/exp4/acp23xt/DTDM_sgmse/add/model/tts.py", line 188, in compute_loss
+    diff_loss, xt = self.decoder.compute_loss(y, y_mask, mu_y, spk)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/exp/exp4/acp23xt/DTDM_sgmse/add/model/diffusion.py", line 195, in compute_loss
+    return self.loss_t(x0, mask, mu, t, spk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/exp/exp4/acp23xt/DTDM_sgmse/add/model/diffusion.py", line 189, in loss_t
+    x0_est = self.estimator(xt, mask, mu, t, spk)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/store/store4/software/bin/anaconda3/envs/CUDA122_Grad-TTS/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: NCSNpp_v2.forward() takes 4 positional arguments but 6 were given

@@ -1,0 +1,151 @@
+[2026-05-05 18:27:08,051][HYDRA] Launching 5 jobs locally
+[2026-05-05 18:27:08,051][HYDRA] 	#0 : +data=data_swp model.masking.alpha=0.2
+Current working directory: /exp/exp4/acp23xt/DTDM_Unet/levy/Hydra_levy/model.masking.alpha:0.2
+[2026-05-05 18:27:08,134][root][INFO] - Initializing logger...
+[2026-05-05 18:27:08,136][root][INFO] - Initializing data loaders...
+[2026-05-05 18:27:09,167][root][INFO] - Initializing model...
+[2026-05-05 18:27:11,132][root][INFO] - Number of encoder parameters = 7.20m
+[2026-05-05 18:27:11,143][root][INFO] - Number of decoder parameters = 7.63m
+/exp/exp4/acp23xt/DTDM_Unet/levy/train.py:63: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(cfg.training.pre_checkpoint)
+cfg.training.pre_checkpoint is ../../checkpts/grad-tts-new_0.pt
+[2026-05-05 18:27:11,550][root][INFO] - Initializing optimizer...
+[2026-05-05 18:27:12,504][root][INFO] - Start training...
+  0%|          | 0/426 [00:00<?, ?it/s]Epoch: 1, iteration: 0 | dur_loss: 0.28605619072914124, prior_loss: 1.1981536149978638, diff_loss: 35.06412124633789
+:   0%|          | 0/426 [00:02<?, ?it/s]Epoch: 1, iteration: 0 | dur_loss: 0.28605619072914124, prior_loss: 1.1981536149978638, diff_loss: 35.06412124633789
+:   0%|          | 1/426 [00:02<20:34,  2.90s/it]Epoch: 1, iteration: 0 | dur_loss: 0.28605619072914124, prior_loss: 1.1981536149978638, diff_loss: 35.06412124633789
+:   0%|          | 2/426 [00:03<11:26,  1.62s/it]Epoch: 1, iteration: 0 | dur_loss: 0.28605619072914124, prior_loss: 1.1981536149978638, diff_loss: 35.06412124633789
+:   1%|          | 3/426 [00:04<08:33,  1.21s/it]Epoch: 1, iteration: 0 | dur_loss: 0.28605619072914124, prior_loss: 1.1981536149978638, diff_loss: 35.06412124633789
+:   1%|          | 4/426 [00:05<07:17,  1.04s/it]Epoch: 1, iteration: 0 | dur_loss: 0.28605619072914124, prior_loss: 1.1981536149978638, diff_loss: 35.06412124633789
+:   1%|          | 5/426 [00:05<06:23,  1.10it/s]Epoch: 1, iteration: 5 | dur_loss: 0.30502042174339294, prior_loss: 1.2155689001083374, diff_loss: 32.313133239746094
+:   1%|          | 5/426 [00:06<06:23,  1.10it/s]Epoch: 1, iteration: 5 | dur_loss: 0.30502042174339294, prior_loss: 1.2155689001083374, diff_loss: 32.313133239746094
+:   1%|▏         | 6/426 [00:06<05:47,  1.21it/s]Epoch: 1, iteration: 5 | dur_loss: 0.30502042174339294, prior_loss: 1.2155689001083374, diff_loss: 32.313133239746094
+:   2%|▏         | 7/426 [00:07<05:32,  1.26it/s]Epoch: 1, iteration: 5 | dur_loss: 0.30502042174339294, prior_loss: 1.2155689001083374, diff_loss: 32.313133239746094
+:   2%|▏         | 8/426 [00:07<05:20,  1.30it/s]Epoch: 1, iteration: 5 | dur_loss: 0.30502042174339294, prior_loss: 1.2155689001083374, diff_loss: 32.313133239746094
+:   2%|▏         | 9/426 [00:08<05:10,  1.34it/s]Epoch: 1, iteration: 5 | dur_loss: 0.30502042174339294, prior_loss: 1.2155689001083374, diff_loss: 32.313133239746094
+:   2%|▏         | 10/426 [00:09<05:04,  1.36it/s]Epoch: 1, iteration: 10 | dur_loss: 0.26365217566490173, prior_loss: 1.2050307989120483, diff_loss: 30.244558334350586
+:   2%|▏         | 10/426 [00:09<05:04,  1.36it/s]Epoch: 1, iteration: 10 | dur_loss: 0.26365217566490173, prior_loss: 1.2050307989120483, diff_loss: 30.244558334350586
+:   3%|▎         | 11/426 [00:09<04:56,  1.40it/s]Epoch: 1, iteration: 10 | dur_loss: 0.26365217566490173, prior_loss: 1.2050307989120483, diff_loss: 30.244558334350586
+:   3%|▎         | 12/426 [00:10<04:50,  1.42it/s]Epoch: 1, iteration: 10 | dur_loss: 0.26365217566490173, prior_loss: 1.2050307989120483, diff_loss: 30.244558334350586
+:   3%|▎         | 13/426 [00:11<04:53,  1.41it/s]Epoch: 1, iteration: 10 | dur_loss: 0.26365217566490173, prior_loss: 1.2050307989120483, diff_loss: 30.244558334350586
+:   3%|▎         | 14/426 [00:12<04:50,  1.42it/s]Epoch: 1, iteration: 10 | dur_loss: 0.26365217566490173, prior_loss: 1.2050307989120483, diff_loss: 30.244558334350586
+:   4%|▎         | 15/426 [00:12<04:48,  1.43it/s]Epoch: 1, iteration: 15 | dur_loss: 0.2933954894542694, prior_loss: 1.211616039276123, diff_loss: 26.38186264038086
+:   4%|▎         | 15/426 [00:13<04:48,  1.43it/s]   Epoch: 1, iteration: 15 | dur_loss: 0.2933954894542694, prior_loss: 1.211616039276123, diff_loss: 26.38186264038086
+:   4%|▍         | 16/426 [00:13<04:47,  1.43it/s]Epoch: 1, iteration: 15 | dur_loss: 0.2933954894542694, prior_loss: 1.211616039276123, diff_loss: 26.38186264038086
+:   4%|▍         | 17/426 [00:14<04:43,  1.44it/s]Epoch: 1, iteration: 15 | dur_loss: 0.2933954894542694, prior_loss: 1.211616039276123, diff_loss: 26.38186264038086
+:   4%|▍         | 18/426 [00:14<04:44,  1.43it/s]Epoch: 1, iteration: 15 | dur_loss: 0.2933954894542694, prior_loss: 1.211616039276123, diff_loss: 26.38186264038086
+:   4%|▍         | 19/426 [00:15<04:43,  1.44it/s]Epoch: 1, iteration: 15 | dur_loss: 0.2933954894542694, prior_loss: 1.211616039276123, diff_loss: 26.38186264038086
+:   5%|▍         | 20/426 [00:16<04:41,  1.44it/s]Epoch: 1, iteration: 20 | dur_loss: 0.2861236035823822, prior_loss: 1.1894570589065552, diff_loss: 21.40947914123535
+:   5%|▍         | 20/426 [00:16<04:41,  1.44it/s]Epoch: 1, iteration: 20 | dur_loss: 0.2861236035823822, prior_loss: 1.1894570589065552, diff_loss: 21.40947914123535
+:   5%|▍         | 21/426 [00:16<04:36,  1.46it/s]Epoch: 1, iteration: 20 | dur_loss: 0.2861236035823822, prior_loss: 1.1894570589065552, diff_loss: 21.40947914123535
+:   5%|▌         | 22/426 [00:17<04:38,  1.45it/s]Epoch: 1, iteration: 20 | dur_loss: 0.2861236035823822, prior_loss: 1.1894570589065552, diff_loss: 21.40947914123535
+:   5%|▌         | 23/426 [00:18<04:36,  1.46it/s]Epoch: 1, iteration: 20 | dur_loss: 0.2861236035823822, prior_loss: 1.1894570589065552, diff_loss: 21.40947914123535
+:   6%|▌         | 24/426 [00:18<04:39,  1.44it/s]Epoch: 1, iteration: 20 | dur_loss: 0.2861236035823822, prior_loss: 1.1894570589065552, diff_loss: 21.40947914123535
+:   6%|▌         | 25/426 [00:19<04:39,  1.44it/s]Epoch: 1, iteration: 25 | dur_loss: 0.28432410955429077, prior_loss: 1.1856173276901245, diff_loss: 16.31891441345215
+:   6%|▌         | 25/426 [00:20<04:39,  1.44it/s]Epoch: 1, iteration: 25 | dur_loss: 0.28432410955429077, prior_loss: 1.1856173276901245, diff_loss: 16.31891441345215
+:   6%|▌         | 26/426 [00:20<04:37,  1.44it/s]Epoch: 1, iteration: 25 | dur_loss: 0.28432410955429077, prior_loss: 1.1856173276901245, diff_loss: 16.31891441345215
+:   6%|▋         | 27/426 [00:21<04:37,  1.44it/s]Epoch: 1, iteration: 25 | dur_loss: 0.28432410955429077, prior_loss: 1.1856173276901245, diff_loss: 16.31891441345215
+:   7%|▋         | 28/426 [00:21<04:36,  1.44it/s]Epoch: 1, iteration: 25 | dur_loss: 0.28432410955429077, prior_loss: 1.1856173276901245, diff_loss: 16.31891441345215
+:   7%|▋         | 29/426 [00:22<04:37,  1.43it/s]Epoch: 1, iteration: 25 | dur_loss: 0.28432410955429077, prior_loss: 1.1856173276901245, diff_loss: 16.31891441345215
+:   7%|▋         | 30/426 [00:23<04:35,  1.44it/s]Epoch: 1, iteration: 30 | dur_loss: 0.28483614325523376, prior_loss: 1.2050479650497437, diff_loss: 14.367826461791992
+:   7%|▋         | 30/426 [00:23<04:35,  1.44it/s]Epoch: 1, iteration: 30 | dur_loss: 0.28483614325523376, prior_loss: 1.2050479650497437, diff_loss: 14.367826461791992
+:   7%|▋         | 31/426 [00:23<04:34,  1.44it/s]Epoch: 1, iteration: 30 | dur_loss: 0.28483614325523376, prior_loss: 1.2050479650497437, diff_loss: 14.367826461791992
+:   8%|▊         | 32/426 [00:24<04:33,  1.44it/s]Epoch: 1, iteration: 30 | dur_loss: 0.28483614325523376, prior_loss: 1.2050479650497437, diff_loss: 14.367826461791992
+:   8%|▊         | 33/426 [00:25<04:34,  1.43it/s]Epoch: 1, iteration: 30 | dur_loss: 0.28483614325523376, prior_loss: 1.2050479650497437, diff_loss: 14.367826461791992
+:   8%|▊         | 34/426 [00:25<04:32,  1.44it/s]Epoch: 1, iteration: 30 | dur_loss: 0.28483614325523376, prior_loss: 1.2050479650497437, diff_loss: 14.367826461791992
+:   8%|▊         | 35/426 [00:26<04:30,  1.45it/s]Epoch: 1, iteration: 35 | dur_loss: 0.2997206151485443, prior_loss: 1.2231203317642212, diff_loss: 12.011173248291016
+:   8%|▊         | 35/426 [00:27<04:30,  1.45it/s] Epoch: 1, iteration: 35 | dur_loss: 0.2997206151485443, prior_loss: 1.2231203317642212, diff_loss: 12.011173248291016
+:   8%|▊         | 36/426 [00:27<04:28,  1.45it/s]Epoch: 1, iteration: 35 | dur_loss: 0.2997206151485443, prior_loss: 1.2231203317642212, diff_loss: 12.011173248291016
+:   9%|▊         | 37/426 [00:28<04:30,  1.44it/s]Epoch: 1, iteration: 35 | dur_loss: 0.2997206151485443, prior_loss: 1.2231203317642212, diff_loss: 12.011173248291016
+:   9%|▉         | 38/426 [00:28<04:31,  1.43it/s]Epoch: 1, iteration: 35 | dur_loss: 0.2997206151485443, prior_loss: 1.2231203317642212, diff_loss: 12.011173248291016
+:   9%|▉         | 39/426 [00:29<04:31,  1.43it/s]Epoch: 1, iteration: 35 | dur_loss: 0.2997206151485443, prior_loss: 1.2231203317642212, diff_loss: 12.011173248291016
+:   9%|▉         | 40/426 [00:30<04:28,  1.44it/s]Epoch: 1, iteration: 40 | dur_loss: 0.28918197751045227, prior_loss: 1.202522873878479, diff_loss: 12.03651237487793
+:   9%|▉         | 40/426 [00:30<04:28,  1.44it/s] Epoch: 1, iteration: 40 | dur_loss: 0.28918197751045227, prior_loss: 1.202522873878479, diff_loss: 12.03651237487793
+:  10%|▉         | 41/426 [00:30<04:29,  1.43it/s]Epoch: 1, iteration: 40 | dur_loss: 0.28918197751045227, prior_loss: 1.202522873878479, diff_loss: 12.03651237487793
+:  10%|▉         | 42/426 [00:31<04:27,  1.44it/s]Epoch: 1, iteration: 40 | dur_loss: 0.28918197751045227, prior_loss: 1.202522873878479, diff_loss: 12.03651237487793
+:  10%|█         | 43/426 [00:32<04:23,  1.45it/s]Epoch: 1, iteration: 40 | dur_loss: 0.28918197751045227, prior_loss: 1.202522873878479, diff_loss: 12.03651237487793
+:  10%|█         | 44/426 [00:32<04:23,  1.45it/s]Epoch: 1, iteration: 40 | dur_loss: 0.28918197751045227, prior_loss: 1.202522873878479, diff_loss: 12.03651237487793
+:  11%|█         | 45/426 [00:33<04:23,  1.45it/s]Epoch: 1, iteration: 45 | dur_loss: 0.2908669114112854, prior_loss: 1.2165379524230957, diff_loss: 11.035921096801758
+:  11%|█         | 45/426 [00:34<04:23,  1.45it/s]Epoch: 1, iteration: 45 | dur_loss: 0.2908669114112854, prior_loss: 1.2165379524230957, diff_loss: 11.035921096801758
+:  11%|█         | 46/426 [00:34<04:14,  1.49it/s]Epoch: 1, iteration: 45 | dur_loss: 0.2908669114112854, prior_loss: 1.2165379524230957, diff_loss: 11.035921096801758
+:  11%|█         | 47/426 [00:34<04:21,  1.45it/s]Epoch: 1, iteration: 45 | dur_loss: 0.2908669114112854, prior_loss: 1.2165379524230957, diff_loss: 11.035921096801758
+:  11%|█▏        | 48/426 [00:35<04:21,  1.45it/s]Epoch: 1, iteration: 45 | dur_loss: 0.2908669114112854, prior_loss: 1.2165379524230957, diff_loss: 11.035921096801758
+:  12%|█▏        | 49/426 [00:36<04:22,  1.44it/s]Epoch: 1, iteration: 45 | dur_loss: 0.2908669114112854, prior_loss: 1.2165379524230957, diff_loss: 11.035921096801758
+:  12%|█▏        | 50/426 [00:37<04:21,  1.44it/s]Epoch: 1, iteration: 50 | dur_loss: 0.2750483751296997, prior_loss: 1.2007925510406494, diff_loss: 10.458999633789062
+:  12%|█▏        | 50/426 [00:37<04:21,  1.44it/s]Epoch: 1, iteration: 50 | dur_loss: 0.2750483751296997, prior_loss: 1.2007925510406494, diff_loss: 10.458999633789062
+:  12%|█▏        | 51/426 [00:37<04:20,  1.44it/s]Epoch: 1, iteration: 50 | dur_loss: 0.2750483751296997, prior_loss: 1.2007925510406494, diff_loss: 10.458999633789062
+:  12%|█▏        | 52/426 [00:38<04:18,  1.45it/s]Epoch: 1, iteration: 50 | dur_loss: 0.2750483751296997, prior_loss: 1.2007925510406494, diff_loss: 10.458999633789062
+:  12%|█▏        | 53/426 [00:39<04:19,  1.44it/s]Epoch: 1, iteration: 50 | dur_loss: 0.2750483751296997, prior_loss: 1.2007925510406494, diff_loss: 10.458999633789062
+:  13%|█▎        | 54/426 [00:39<04:19,  1.43it/s]Epoch: 1, iteration: 50 | dur_loss: 0.2750483751296997, prior_loss: 1.2007925510406494, diff_loss: 10.458999633789062
+:  13%|█▎        | 55/426 [00:40<04:19,  1.43it/s]Epoch: 1, iteration: 55 | dur_loss: 0.29651349782943726, prior_loss: 1.2106484174728394, diff_loss: 10.152745246887207
+:  13%|█▎        | 55/426 [00:41<04:19,  1.43it/s]Epoch: 1, iteration: 55 | dur_loss: 0.29651349782943726, prior_loss: 1.2106484174728394, diff_loss: 10.152745246887207
+:  13%|█▎        | 56/426 [00:41<04:16,  1.44it/s]Epoch: 1, iteration: 55 | dur_loss: 0.29651349782943726, prior_loss: 1.2106484174728394, diff_loss: 10.152745246887207
+:  13%|█▎        | 57/426 [00:41<04:17,  1.44it/s]Epoch: 1, iteration: 55 | dur_loss: 0.29651349782943726, prior_loss: 1.2106484174728394, diff_loss: 10.152745246887207
+:  14%|█▎        | 58/426 [00:42<04:11,  1.47it/s]Epoch: 1, iteration: 55 | dur_loss: 0.29651349782943726, prior_loss: 1.2106484174728394, diff_loss: 10.152745246887207
+:  14%|█▍        | 59/426 [00:43<04:11,  1.46it/s]Epoch: 1, iteration: 55 | dur_loss: 0.29651349782943726, prior_loss: 1.2106484174728394, diff_loss: 10.152745246887207
+:  14%|█▍        | 60/426 [00:43<04:12,  1.45it/s]Epoch: 1, iteration: 60 | dur_loss: 0.30465373396873474, prior_loss: 1.1986593008041382, diff_loss: 10.161523818969727
+:  14%|█▍        | 60/426 [00:44<04:12,  1.45it/s]Epoch: 1, iteration: 60 | dur_loss: 0.30465373396873474, prior_loss: 1.1986593008041382, diff_loss: 10.161523818969727
+:  14%|█▍        | 61/426 [00:44<04:13,  1.44it/s]Epoch: 1, iteration: 60 | dur_loss: 0.30465373396873474, prior_loss: 1.1986593008041382, diff_loss: 10.161523818969727
+:  15%|█▍        | 62/426 [00:45<04:14,  1.43it/s]Epoch: 1, iteration: 60 | dur_loss: 0.30465373396873474, prior_loss: 1.1986593008041382, diff_loss: 10.161523818969727
+:  15%|█▍        | 63/426 [00:46<04:14,  1.42it/s]Epoch: 1, iteration: 60 | dur_loss: 0.30465373396873474, prior_loss: 1.1986593008041382, diff_loss: 10.161523818969727
+:  15%|█▌        | 64/426 [00:46<04:13,  1.43it/s]Epoch: 1, iteration: 60 | dur_loss: 0.30465373396873474, prior_loss: 1.1986593008041382, diff_loss: 10.161523818969727
+:  15%|█▌        | 65/426 [00:47<04:13,  1.43it/s]Epoch: 1, iteration: 65 | dur_loss: 0.30592042207717896, prior_loss: 1.2081117630004883, diff_loss: 10.047982215881348
+:  15%|█▌        | 65/426 [00:48<04:13,  1.43it/s]Epoch: 1, iteration: 65 | dur_loss: 0.30592042207717896, prior_loss: 1.2081117630004883, diff_loss: 10.047982215881348
+:  15%|█▌        | 66/426 [00:48<04:12,  1.42it/s]Epoch: 1, iteration: 65 | dur_loss: 0.30592042207717896, prior_loss: 1.2081117630004883, diff_loss: 10.047982215881348
+:  16%|█▌        | 67/426 [00:48<04:13,  1.42it/s]Epoch: 1, iteration: 65 | dur_loss: 0.30592042207717896, prior_loss: 1.2081117630004883, diff_loss: 10.047982215881348
+:  16%|█▌        | 68/426 [00:49<04:12,  1.42it/s]Epoch: 1, iteration: 65 | dur_loss: 0.30592042207717896, prior_loss: 1.2081117630004883, diff_loss: 10.047982215881348
+:  16%|█▌        | 69/426 [00:50<04:12,  1.41it/s]Epoch: 1, iteration: 65 | dur_loss: 0.30592042207717896, prior_loss: 1.2081117630004883, diff_loss: 10.047982215881348
+:  16%|█▋        | 70/426 [00:50<04:09,  1.43it/s]Epoch: 1, iteration: 70 | dur_loss: 0.29076626896858215, prior_loss: 1.209306001663208, diff_loss: 8.879624366760254
+:  16%|█▋        | 70/426 [00:51<04:09,  1.43it/s]  Epoch: 1, iteration: 70 | dur_loss: 0.29076626896858215, prior_loss: 1.209306001663208, diff_loss: 8.879624366760254
+:  17%|█▋        | 71/426 [00:51<04:09,  1.42it/s]Epoch: 1, iteration: 70 | dur_loss: 0.29076626896858215, prior_loss: 1.209306001663208, diff_loss: 8.879624366760254
+:  17%|█▋        | 72/426 [00:52<04:08,  1.42it/s]Epoch: 1, iteration: 70 | dur_loss: 0.29076626896858215, prior_loss: 1.209306001663208, diff_loss: 8.879624366760254
+:  17%|█▋        | 73/426 [00:53<04:08,  1.42it/s]Epoch: 1, iteration: 70 | dur_loss: 0.29076626896858215, prior_loss: 1.209306001663208, diff_loss: 8.879624366760254
+:  17%|█▋        | 74/426 [00:53<04:08,  1.42it/s]Epoch: 1, iteration: 70 | dur_loss: 0.29076626896858215, prior_loss: 1.209306001663208, diff_loss: 8.879624366760254
+:  18%|█▊        | 75/426 [00:54<04:08,  1.41it/s]Epoch: 1, iteration: 75 | dur_loss: 0.27877604961395264, prior_loss: 1.1980286836624146, diff_loss: 9.589740753173828
+:  18%|█▊        | 75/426 [00:55<04:08,  1.41it/s]Epoch: 1, iteration: 75 | dur_loss: 0.27877604961395264, prior_loss: 1.1980286836624146, diff_loss: 9.589740753173828
+:  18%|█▊        | 76/426 [00:55<04:06,  1.42it/s]Epoch: 1, iteration: 75 | dur_loss: 0.27877604961395264, prior_loss: 1.1980286836624146, diff_loss: 9.589740753173828
+:  18%|█▊        | 77/426 [00:55<04:04,  1.43it/s]Epoch: 1, iteration: 75 | dur_loss: 0.27877604961395264, prior_loss: 1.1980286836624146, diff_loss: 9.589740753173828
+:  18%|█▊        | 78/426 [00:56<04:06,  1.41it/s]Epoch: 1, iteration: 75 | dur_loss: 0.27877604961395264, prior_loss: 1.1980286836624146, diff_loss: 9.589740753173828
+:  19%|█▊        | 79/426 [00:57<04:05,  1.41it/s]Epoch: 1, iteration: 75 | dur_loss: 0.27877604961395264, prior_loss: 1.1980286836624146, diff_loss: 9.589740753173828
+:  19%|█▉        | 80/426 [00:58<04:06,  1.40it/s]Epoch: 1, iteration: 80 | dur_loss: 0.29230257868766785, prior_loss: 1.1973376274108887, diff_loss: 9.73295783996582
+:  19%|█▉        | 80/426 [00:58<04:06,  1.40it/s] Epoch: 1, iteration: 80 | dur_loss: 0.29230257868766785, prior_loss: 1.1973376274108887, diff_loss: 9.73295783996582
+:  19%|█▉        | 81/426 [00:58<04:05,  1.41it/s]Epoch: 1, iteration: 80 | dur_loss: 0.29230257868766785, prior_loss: 1.1973376274108887, diff_loss: 9.73295783996582
+:  19%|█▉        | 82/426 [00:59<04:02,  1.42it/s]Epoch: 1, iteration: 80 | dur_loss: 0.29230257868766785, prior_loss: 1.1973376274108887, diff_loss: 9.73295783996582
+:  19%|█▉        | 83/426 [01:00<03:57,  1.44it/s]Epoch: 1, iteration: 80 | dur_loss: 0.29230257868766785, prior_loss: 1.1973376274108887, diff_loss: 9.73295783996582
+:  20%|█▉        | 84/426 [01:00<03:56,  1.44it/s]Epoch: 1, iteration: 80 | dur_loss: 0.29230257868766785, prior_loss: 1.1973376274108887, diff_loss: 9.73295783996582
+:  20%|█▉        | 85/426 [01:01<03:58,  1.43it/s]Epoch: 1, iteration: 85 | dur_loss: 0.2785724997520447, prior_loss: 1.2011606693267822, diff_loss: 8.609089851379395
+:  20%|█▉        | 85/426 [01:02<03:58,  1.43it/s]Epoch: 1, iteration: 85 | dur_loss: 0.2785724997520447, prior_loss: 1.2011606693267822, diff_loss: 8.609089851379395
+:  20%|██        | 86/426 [01:02<03:56,  1.44it/s]Epoch: 1, iteration: 85 | dur_loss: 0.2785724997520447, prior_loss: 1.2011606693267822, diff_loss: 8.609089851379395
+:  20%|██        | 87/426 [01:02<03:54,  1.44it/s]Epoch: 1, iteration: 85 | dur_loss: 0.2785724997520447, prior_loss: 1.2011606693267822, diff_loss: 8.609089851379395
+:  21%|██        | 88/426 [01:03<03:56,  1.43it/s]Epoch: 1, iteration: 85 | dur_loss: 0.2785724997520447, prior_loss: 1.2011606693267822, diff_loss: 8.609089851379395
+:  21%|██        | 89/426 [01:04<03:51,  1.46it/s]Epoch: 1, iteration: 85 | dur_loss: 0.2785724997520447, prior_loss: 1.2011606693267822, diff_loss: 8.609089851379395
+:  21%|██        | 90/426 [01:04<03:50,  1.46it/s]Epoch: 1, iteration: 90 | dur_loss: 0.2833440899848938, prior_loss: 1.2125890254974365, diff_loss: nan
+:  21%|██        | 90/426 [01:05<03:50,  1.46it/s]              Epoch: 1, iteration: 90 | dur_loss: 0.2833440899848938, prior_loss: 1.2125890254974365, diff_loss: nan
+:  21%|██▏       | 91/426 [01:05<03:48,  1.47it/s]Epoch: 1, iteration: 90 | dur_loss: 0.2833440899848938, prior_loss: 1.2125890254974365, diff_loss: nan
+:  22%|██▏       | 92/426 [01:06<03:48,  1.46it/s]Epoch: 1, iteration: 90 | dur_loss: 0.2833440899848938, prior_loss: 1.2125890254974365, diff_loss: nan
+:  22%|██▏       | 93/426 [01:07<03:50,  1.44it/s]Epoch: 1, iteration: 90 | dur_loss: 0.2833440899848938, prior_loss: 1.2125890254974365, diff_loss: nan
+:  22%|██▏       | 94/426 [01:07<03:49,  1.45it/s]Epoch: 1, iteration: 90 | dur_loss: 0.2833440899848938, prior_loss: 1.2125890254974365, diff_loss: nan
+:  22%|██▏       | 95/426 [01:08<03:47,  1.46it/s]Epoch: 1, iteration: 95 | dur_loss: 0.28045064210891724, prior_loss: 1.2019269466400146, diff_loss: nan
+:  22%|██▏       | 95/426 [01:09<03:47,  1.46it/s]Epoch: 1, iteration: 95 | dur_loss: 0.28045064210891724, prior_loss: 1.2019269466400146, diff_loss: nan
+:  23%|██▎       | 96/426 [01:09<03:44,  1.47it/s]Epoch: 1, iteration: 95 | dur_loss: 0.28045064210891724, prior_loss: 1.2019269466400146, diff_loss: nan
+:  23%|██▎       | 97/426 [01:09<03:44,  1.47it/s]Epoch: 1, iteration: 95 | dur_loss: 0.28045064210891724, prior_loss: 1.2019269466400146, diff_loss: nan
+:  23%|██▎       | 98/426 [01:10<03:43,  1.46it/s]Epoch: 1, iteration: 95 | dur_loss: 0.28045064210891724, prior_loss: 1.2019269466400146, diff_loss: nan
+:  23%|██▎       | 99/426 [01:11<03:43,  1.46it/s]Epoch: 1, iteration: 95 | dur_loss: 0.28045064210891724, prior_loss: 1.2019269466400146, diff_loss: nan
+:  23%|██▎       | 100/426 [01:11<03:44,  1.45it/s]Epoch: 1, iteration: 100 | dur_loss: 0.2996276617050171, prior_loss: 1.2135870456695557, diff_loss: nan
+:  23%|██▎       | 100/426 [01:12<03:44,  1.45it/s]Epoch: 1, iteration: 100 | dur_loss: 0.2996276617050171, prior_loss: 1.2135870456695557, diff_loss: nan
+:  24%|██▎       | 101/426 [01:12<03:43,  1.45it/s]Epoch: 1, iteration: 100 | dur_loss: 0.2996276617050171, prior_loss: 1.2135870456695557, diff_loss: nan
+:  24%|██▍       | 102/426 [01:13<03:43,  1.45it/s]Epoch: 1, iteration: 100 | dur_loss: 0.2996276617050171, prior_loss: 1.2135870456695557, diff_loss: nan
+:  24%|██▍       | 103/426 [01:13<03:43,  1.45it/s]Epoch: 1, iteration: 100 | dur_loss: 0.2996276617050171, prior_loss: 1.2135870456695557, diff_loss: nan
+:  24%|██▍       | 104/426 [01:14<03:43,  1.44it/s]Epoch: 1, iteration: 100 | dur_loss: 0.2996276617050171, prior_loss: 1.2135870456695557, diff_loss: nan
+:  25%|██▍       | 105/426 [01:15<03:40,  1.45it/s]Epoch: 1, iteration: 105 | dur_loss: 0.2950000762939453, prior_loss: 1.222293496131897, diff_loss: nan
+:  25%|██▍       | 105/426 [01:15<03:40,  1.45it/s] Epoch: 1, iteration: 105 | dur_loss: 0.2950000762939453, prior_loss: 1.222293496131897, diff_loss: nan
+:  25%|██▍       | 106/426 [01:15<03:42,  1.44it/s]Epoch: 1, iteration: 105 | dur_loss: 0.2950000762939453, prior_loss: 1.222293496131897, diff_loss: nan
+:  25%|██▌       | 107/426 [01:16<03:40,  1.44it/s]Epoch: 1, iteration: 105 | dur_loss: 0.2950000762939453, prior_loss: 1.222293496131897, diff_loss: nan
+:  25%|██▌       | 108/426 [01:17<03:38,  1.45it/s]Epoch: 1, iteration: 105 | dur_loss: 0.2950000762939453, prior_loss: 1.222293496131897, diff_loss: nan
+:  26%|██▌       | 109/426 [01:18<03:38,  1.45it/s]Epoch: 1, iteration: 105 | dur_loss: 0.2950000762939453, prior_loss: 1.222293496131897, diff_loss: nan
+:  26%|██▌       | 110/426 [01:18<03:38,  1.45it/s]Epoch: 1, iteration: 110 | dur_loss: 0.28098994493484497, prior_loss: 1.2045083045959473, diff_loss: nan
+:  26%|██▌       | 110/426 [01:19<03:38,  1.45it/s]Epoch: 1, iteration: 110 | dur_loss: 0.28098994493484497, prior_loss: 1.2045083045959473, diff_loss: nan
+:  26%|██▌       | 111/426 [01:19<03:38,  1.44it/s]Epoch: 1, iteration: 110 | dur_loss: 0.28098994493484497, prior_loss: 1.2045083045959473, diff_loss: nan
+:  26%|██▋       | 112/426 [01:20<03:37,  1.44it/s]Epoch: 1, iteration: 110 | dur_loss: 0.28098994493484497, prior_loss: 1.2045083045959473, diff_loss: nan
+:  27%|██▋       | 113/426 [01:20<03:36,  1.44it/s]Epoch: 1, iteration: 110 | dur_loss: 0.28098994493484497, prior_loss: 1.2045083045959473, diff_loss: nan
+:  27%|██▋       | 114/426 [01:21<03:36,  1.44it/s]
