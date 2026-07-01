@@ -4,7 +4,7 @@
 #SBATCH --gres=gpu:1         # Number of GPUs
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=6G
-#SBATCH --job-name=levy
+#SBATCH --job-name=astable
 #SBATCH --time=0-05:00:00
 export SLURM_EXPORT_ENV=ALL
 module purge

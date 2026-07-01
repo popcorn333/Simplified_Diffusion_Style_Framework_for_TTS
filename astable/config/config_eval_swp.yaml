@@ -16,13 +16,13 @@ hydra:
     dir: ${hydra.job.name}
     subdir: ${hydra.job.override_dirname}
 
-basename: blur
+basename: astable
 
 data:
 
 eval:
   split: test     #train, dev, test
-  starting_epoch: 40
+  starting_epoch: 50
   ending_epoch: 60
   n_timesteps: 10
   checkpoint_dir: ../../Hydra_${basename}/${hydra:job.override_dirname}/checkpoint
@@ -61,6 +61,7 @@ model:
     d: 0
     l: 1
     p: 0
+    alpha: 1.8
 
 training:
   load_encoder: True

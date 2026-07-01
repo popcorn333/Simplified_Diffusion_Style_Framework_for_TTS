@@ -3,9 +3,9 @@
 #SBATCH --qos=gpu
 #SBATCH --gres=gpu:1         # Number of GPUs
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=15G
-#SBATCH --job-name=blur
-#SBATCH --time=0-30:00:00
+#SBATCH --mem=5G
+#SBATCH --job-name=heat_equation
+#SBATCH --time=0-03:00:00
 export SLURM_EXPORT_ENV=ALL
 module purge
 module load Anaconda3/2022.10
@@ -14,7 +14,4 @@ module load CUDA/12.4.0
 
 source activate grad-tts-masking
 
-
-
-HYDRA_FULL_ERROR=1 python train.py -m --config-name=config_swp +data=data_swp  model.masking.b=10,20,40
 HYDRA_FULL_ERROR=1 python inference.py -m --config-name=config_eval_swp +data=data_swp  model.masking.b=10,20,40

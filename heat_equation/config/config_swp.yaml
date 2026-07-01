@@ -17,7 +17,7 @@ hydra:
     dir: ${hydra.job.name}
     subdir: ${hydra.job.override_dirname}
 
-basename: blur
+basename: heat_equation
 data:
 
 eval:
